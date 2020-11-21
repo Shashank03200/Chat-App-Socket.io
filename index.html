@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatOn - RealTime Socket.io</title>
+
+    
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"
+      integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    
+    
+    <link rel="stylesheet" href="css\bootstrap.min\css">
+    <link rel="stylesheet" href="css\style.css" />  
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="div1">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="images\logo.jpg" alt="logo-image" />
+            </a>
+            
+            <div class="navbrand brand-name">ChatOn</div> 
+        </div>     
+        
+        <div class="user-details">
+            <div class="user-logo">
+                <img src="images\user-logo.png" class="user-logo" alt="UserLogo">
+            </div>
+            <div id="username"></div>
+        
+    </div>
+      </nav>
+      
+    <div class="msg-container">
+        <div class="main-container">
+        
+        
+        
+
+        </div>
+        
+        <div class="send-container">
+            <form onSubmit="return false;">
+            
+                <div class="form-row">
+                <div class="col-md-10">
+                    <input class="form-control" type="text" name="message" id="messageInp" placeholder="Type a message" autocomplete="off" />
+                </div>
+                <div class="col-md-1">
+                    <button class="inline btn btn-success" id="sendBtn" type="button">Send</button>
+                </div>
+                </div>
+
+            </form>
+        </div>
+    
+
+    </div>
+    <script src="js/client.js"></script>
+  </body>
+</html>

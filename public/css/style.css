@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+    
+.logo{
+    width: 35px;
+    height: 35px;
+    background-color: #007bff;
+}
+
+.brand-name{
+    font-family: 'Roboto', serif;
+    font-size: 34px;
+    color: #ffffff;
+}
+
+.main-container{
+    height: 65vh;
+    overflow-y: auto;
+}
+.msg-container{
+    background: url('https://images.unsplash.com/photo-1575330719343-23de81f5b995?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1967&q=80');;
+    background-size: cover;
+    position: relative;
+    top: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 20px;
+    box-shadow: -2px 1px 30px 0px #007bff;
+    height: 80vh;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom: 3px solid blue;
+    
+}
+
+.message{
+    font-family: 'Open Sans', serif;
+    padding: 5px;
+    color:black;
+    margin: 15px;
+    font-size: 14px;
+    width: fit-content;
+    border-radius: 5px;
+    max-width: 600px;
+    word-wrap: break-word;
+    
+}
+
+.left{
+    background-color: #ffffff;
+
+    float: left;
+    clear: both;
+}
+
+.right{
+    background-color:#E5FFCC;
+    color: black;
+    float: right;
+    clear: both;
+}
+
+.send-container{  
+
+    position: absolute;
+    width: 103%;
+    bottom: 20px;
+}
+
+input{
+    font-size: 14px;
+    
+}
+
+.info{
+    text-align: center;
+    clear: both;
+    font-size: 12px;
+    background-color: rgba(114, 139, 139);
+    color: white;
+    width: fit-content;
+    padding: 5px 10px;
+    
+}
+
+#messageInp{
+    width: 100%;
+    min-width: 100px;
+}
+.center{
+    border-radius: 14px;
+    margin: 15px auto;
+}
+
+#sendBtn{
+    background-color: #007bff;
+}
+
+
+.form-row{
+    
+    margin-bottom: 10px;
+}
+
+#username{
+    font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+.div1{
+    display: flex;
+}
+.user-details{
+    padding: 0px 20px;
+    border-radius: 20px;
+    border: 1px solid greenyellow;
+    display: flex;
+    margin: auto;
+    
+}
+
+.user-logo{
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width:900px) {
+    .msg-container{
+        width:90%;
+        padding:10px 0px;
+    }
+}
