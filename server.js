@@ -1,10 +1,13 @@
 const express = require("express");
+var socket = require("socket.io");
 
 const app = express();
 
 app.use(express.static("public"));
 
-const server = app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+
+const server = app.listen(PORT, () => {
   console.log("Server running on port 3000");
 });
 
@@ -13,8 +16,6 @@ app.get("/", (req, res) => {
 });
 
 let users = {};
-
-var socket = require("socket.io");
 
 // Global socket server object;
 var io = socket(server);
