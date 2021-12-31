@@ -13,19 +13,19 @@
       crossorigin="anonymous"
     ></script>
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     
-    <link rel="stylesheet" href="css\bootstrap.min\css">
+    
     <link rel="stylesheet" href="css\style.css" />  
   </head>
   <body>
-
+    <div id="success-alert" class="alert alert-success alert-dismissible fade show custom-alert" role="alert">
+      Connected to server successfully.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="div1">
             <a class="navbar-brand" href="#">
@@ -38,6 +38,7 @@
         <div class="user-details">
             <div class="user-logo">
                 <img src="images\user-logo.png" class="user-logo" alt="UserLogo">
+                
             </div>
             <div id="username"></div>
         
@@ -53,11 +54,11 @@
         </div>
         
         <div class="send-container">
-            <form onSubmit="return false;">
+            <form onSubmit="return false;" autocomplete="off" >
             
                 <div class="form-row">
                 <div class="col-md-10">
-                    <input class="form-control" type="text" name="message" id="messageInp" placeholder="Type a message" autocomplete="off" />
+                    <input class="form-control" type="text" name="message" id="messageInp" placeholder="Type a message"  />
                 </div>
                 <div class="col-md-1">
                     <button class="inline btn btn-success" id="sendBtn" type="button">Send</button>
@@ -69,6 +70,7 @@
     
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/client.js"></script>
   </body>
 </html>
