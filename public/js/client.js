@@ -1,11 +1,11 @@
-const socket = io.connect("http://localhost:3000");
+const socket = io.connect("https://node-and-chat.herokuapp.com/");
 
 const messageInput = document.getElementById("messageInp");
 messageInput.focus();
 const sendBtn = document.getElementById("sendBtn");
 
 const messageContainer = document.querySelector(".main-container");
-
+j;
 const append = (message, position) => {
   const messageElement = document.createElement("div");
   messageElement.innerText = message;
